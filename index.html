@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cartão de Aniversário - Dark Coquette & Crepúsculo</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap');
+
+    :root {
+      --bg-dark: #10060e;
+      --rose: #c8a6b7;
+      --rose-light: #e5c4d4;
+      --shadow: rgba(199, 137, 168, 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg-dark);
+      font-family: 'Playfair Display', serif;
+      color: var(--rose-light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.03), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.02), transparent 50%);
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(18, 10, 19, 0.95);
+      border: 2px solid var(--rose);
+      border-radius: 20px;
+      padding: 30px 25px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 20px var(--shadow), inset 0 0 20px #321727aa;
+      position: relative;
+      transition: box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 30px var(--rose-light), inset 0 0 40px #4d1f39aa;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8rem;
+      color: var(--rose);
+      text-shadow: 0 0 12px var(--rose-light);
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #e9d9de;
+      margin-bottom: 25px;
+    }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5rem;
+      color: var(--rose-light);
+      text-shadow: 0 0 5px var(--rose);
+    }
+
+    .divider {
+      height: 2px;
+      width: 80px;
+      margin: 20px auto;
+      background: linear-gradient(90deg, transparent, var(--rose-light), transparent);
+      border-radius: 20px;
+    }
+
+    /* Ornamento decorativo superior */
+    .ornament {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 40px;
+    }
+
+    .ornament svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: var(--rose);
+      stroke-width: 1.5;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .card {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="ornament" aria-hidden="true">
+      <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 20 Q20 5 30 20 T50 20 T70 20 T90 20 T110 20" />
+        <circle cx="10" cy="20" r="2.5"/>
+        <circle cx="30" cy="20" r="2.5"/>
+        <circle cx="50" cy="20" r="2.5"/>
+        <circle cx="70" cy="20" r="2.5"/>
+        <circle cx="90" cy="20" r="2.5"/>
+        <circle cx="110" cy="20" r="2.5"/>
+      </svg>
+    </div>
+    <h1>Feliz Aniversário</h1>
+    <div class="divider"></div>
+    <p>
+      Que sua vida seja envolta em mistério e beleza, como um crepúsculo eterno,<br>
+      e repleta de charme, intensidade e amor — do jeitinho que só você merece.
+    </p>
+    <div class="signature">— Com carinho, Lavínia</div>
+  </div>
+
+</body>
+</html>
